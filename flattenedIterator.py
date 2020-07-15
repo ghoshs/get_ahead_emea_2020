@@ -23,9 +23,6 @@ class FlattenedIterator:
             for idx, iterator in enumerate(increment_over):
                 if iterator.hasNext():
                     self.flattened.append(iterator.next())
-                else:
-                    # remove iterators which have been traversed
-                    del(increment_over[idx])
 
     def hasNext(self):
         # Implement me
